@@ -110,8 +110,8 @@ export default {
       if (operand2 === 0) {
         this.error = "Делить на 0 нельзя!";
       } else {
-        this.result = operand1 / operand2;
-        this.fibResult = this.fibb1 / this.fibb2;
+        this.result = Number(operand1 / operand2).toFixed(2);
+        this.fibResult = Number(this.fibb1 / this.fibb2).toFixed(2);
       }
     },
     multiply() {
